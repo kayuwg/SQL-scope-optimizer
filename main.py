@@ -18,7 +18,7 @@ def main(sql, schema):
 
 if __name__ == "__main__":
     # try 1633, 1699, 1364, 1212
-    problemNo = 1212
+    problemNo = 1633
     schema_file=f"schema/{problemNo}.json"
     with open(schema_file) as file:
         schema = json.load(file)
