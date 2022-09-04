@@ -8,7 +8,7 @@ The input query is dissected recursively to isolate the SELECT target list or de
 
 Some interesting processing steps may be worth highlighting. There is a module that translates between predicates in AST form and Z3 formulas. A predicate can be translated into a Z3 formula preserving integers, converted to CNF form or context-simplified, and translated back to AST form. Sometimes a predicate will evaluate to false, so we know a query containing this predicate as the filter must return empty and can be omitted as a disjunctive. There is also an algorithm for determining all columns that are functionally dependent on a given set of columns, taking into account all equalities between columns that we know are true.
 
-The tool is a explorative prototype and is not further developed.
+The tool is a explorative prototype and will not be further developed.
 
 ## Code structure
 The tool is written in python. Relevant parts have been grouped together, and here is the dependency graph of files/classes:
